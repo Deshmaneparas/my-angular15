@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding: 0.5rem;
-  border:1px solid#ccc;
+  /* border:1px solid#ccc; */
 }
 .avtar{
   display: flex;
@@ -12,7 +12,7 @@
   align-items:center;
   height: 9rem;
   width: 100%;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 .avtar > img{
   height: 10rem;
