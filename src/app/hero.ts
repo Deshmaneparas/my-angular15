@@ -3,5 +3,5 @@ export interface Hero {
   name:string,
   field:string,
   info:string,
-  
+  id:number,
 }
