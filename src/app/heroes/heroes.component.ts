@@ -9,23 +9,21 @@ import { HeroComponent } from './hero/hero.component';
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  imports: [HeroComponent, CommonModule],
+  imports:[HeroComponent,CommonModule],
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[] = HEROES;
-  @Output()heroSelected=new EventEmitter<Hero>();
+  heroes: Hero[] = [];
+  @Output() heroSelected = new EventEmitter<Hero>();
 
-  constructor() {
+  constructor() {}
+
+  ngOnInit() {
     this.heroes = HEROES;
     // console.log(this.heroes);
   }
 
-  ngOnInit() {
-    this.heroes = HEROES;
-  }
   onSelected(hero: Hero){
     // console.log(hero);
-    // this.heroSelected.emit(hero);
-    
-  }
+    this.heroSelected.emit(hero);
+  }     
 }

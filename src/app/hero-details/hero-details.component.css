@@ -1,32 +1,33 @@
 .container{
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 50vh;
   width: 30vw;
   align-items: center;
   justify-content: center;
-
 }
-.card{
+.avtar{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 20vh;
+  width: 100%;
+}
+ .card{
   display: flex;
   flex-direction: column;
   height: 60vh;
   width: 30vw;
-}
-.avtar{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  width: 100%;
-}
-.avtar > img{
-  height: 100%;
-  width: 100%;
+} 
+
+.avtar>img{
+  height:20vh;
+  width:50%;
 }
 .info{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
 }
