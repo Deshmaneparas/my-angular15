@@ -4,7 +4,14 @@
   align-items: center;
   flex-direction: column;
   padding: 0.5rem;
-  /* border:1px solid#ccc; */
+  border:1px solid#ccc;
+  height: 38vh;
+  width: 15rem;
+}
+.container:hover{
+  background-color: #ccc;
+  height: 39.9vh;
+  box-shadow: 1px 1px 3px rgba(7,7,7,0.3);
 }
 .avtar{
   display: flex;
@@ -12,9 +19,18 @@
   align-items:center;
   height: 9rem;
   width: 100%;
+  padding: 2.2rem;
   /* background-color: blueviolet; */
+}
+.name-id{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: cursive;
+  font-size: 15px;
 }
 .avtar > img{
   height: 10rem;
+  width: 15rem;
 
 }

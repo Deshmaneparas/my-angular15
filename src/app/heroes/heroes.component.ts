@@ -5,22 +5,22 @@ import { HEROES } from '../mock-heroes';
 import { HeroComponent } from './hero/hero.component';
 
 @Component({
-  standalone:true,
+  standalone: true,
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  imports:[HeroComponent,CommonModule],
+  imports: [HeroComponent, CommonModule],
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[]=HEROES;
+  heroes: Hero[] = HEROES;
 
   constructor() {
-    this.heroes=HEROES;
+    this.heroes = HEROES;
     // console.log(this.heroes);
-   }
-
-  ngOnInit() {
-
   }
 
+  ngOnInit() {
+    this.heroes = HEROES;
+  }
+  onSelected(hero: Hero);
 }
