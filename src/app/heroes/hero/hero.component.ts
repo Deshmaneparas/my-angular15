@@ -16,7 +16,7 @@ export class HeroComponent implements OnInit {
     // console.log(this.hero);
   }
   onSelected(event:any){
-    console.log(event);
+    // console.log(event);
   }
 
 }
