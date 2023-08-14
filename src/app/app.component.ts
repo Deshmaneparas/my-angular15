@@ -15,5 +15,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
   }
+    onHeroSelected(hero:Hero){
+      console.log(hero);
+    
+  }
 
 }
