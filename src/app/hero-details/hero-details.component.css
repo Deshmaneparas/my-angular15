@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 30vw;
+}
+.avtar{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+}
+.avtar > img{
+  height: 100%;
+  width: 100%;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
